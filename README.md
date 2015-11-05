@@ -21,6 +21,8 @@ java -jar selenium-server-standalone-2.48.2.jar -role node -hub http://localhost
 ````
 
 Replace localhost in sections below Hub's IP Address
+
+**[hubconfig.json]**
 ````
 {
 "host": null,
@@ -39,6 +41,7 @@ Replace localhost in sections below Hub's IP Address
 }
 ````
 
+**[nodeconfig.json]**
 ````
 {
   "capabilities":
