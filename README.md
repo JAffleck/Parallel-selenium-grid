@@ -9,19 +9,19 @@ Super-simple example of how to make WebDriver Parallel tests with Selenium grid 
 3. Start grid nodes and hub. The simplest way on windows VM's / machines is with a batch file) see example .bat and .json files below. (I.e. On the hub, run 'C:\selenium\startHub.bat' and on Nodes 'C:\selenium\startNode.bat' [Grid configuration instructions](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
 4. Import `Parallel` folder into Eclipse or Intellij, and run as a TestNG test. (I assume you know how to do that already and just wanted to know how to make tests parallel (if not, please [see SeleniumSimplified videos](http://seleniumsimplified.com/get-started/) for tips on getting set up from the very basics to get this working
 
+**[startHub.bat]**
 ````batch
-startHub.bat
-java -jar selenium-server-standalone-2.14.0.jar -role hub -hubConfig hubconfig.json
+java -jar selenium-server-standalone-2.48.2.jar -role hub -hubConfig hubconfig.json
 ````
 
+**[startNode.bat]**
 ````batch
-startNode.bat
 @REM replace localhost with IP address of Hub Computer
-java -jar selenium-server-standalone-2.14.0.jar -role node -hub http://localhost:4444/grid/register -nodeConfig nodeconfig.json
+java -jar selenium-server-standalone-2.48.2.jar -role node -hub http://localhost:4444/grid/register -nodeConfig nodeconfig.json
 ````
 
 Replace localhost in sections below Hub's IP Address
-````JSON
+````
 {
 "host": null,
 "port": 4444,
@@ -39,7 +39,7 @@ Replace localhost in sections below Hub's IP Address
 }
 ````
 
-````JSON
+````
 {
   "capabilities":
       [
