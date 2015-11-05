@@ -5,7 +5,7 @@ Based on instructions from [http://testers.lviv.ua/how-to-run-parallel-tests-wit
 ## Running WebDriver Tests in Parallel using TestNG
 
 ### Download the following to C:\Selenium
-1. [Download latest Selenium-server file](http://goo.gl/PJUZfa) on grid hub and all grid nodes
+1. [Download latest Selenium-server-standalone](http://goo.gl/PJUZfa) on grid hub and all grid nodes
 2. [Download Latest IEDriver](http://selenium-release.storage.googleapis.com/index.html) 
 3. [Download Latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to all Grid Nodes that will run tests (and hub if it will as well)
 4. Configure .bat files for JSON files for HUB and Nodes, and save to C:\Selenium as shown in files below.
