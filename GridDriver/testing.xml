@@ -1,0 +1,5 @@
+<suite name="My Test Suite">
+    <suite-files>
+        <suite-file path="./testFiles.xml" />
+    </suite-files>
+</suite>
