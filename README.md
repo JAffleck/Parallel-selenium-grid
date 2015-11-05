@@ -1,5 +1,6 @@
 # Parallel-selenium-grid
-Super-simple example of how to make WebDriver Parallel tests with Selenium grid for TestNG
+Super-simple example of how to make WebDriver Parallel tests with Selenium grid for TestNG.
+Based on instructions from [http://testers.lviv.ua/how-to-run-parallel-tests-with-selenium-webdriver-and-testng/](http://testers.lviv.ua/how-to-run-parallel-tests-with-selenium-webdriver-and-testng/)
 
 ## Running WebDriver Tests in Parallel using TestNG
 
