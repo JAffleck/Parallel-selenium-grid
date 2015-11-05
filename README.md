@@ -8,10 +8,10 @@ Based on instructions from [http://testers.lviv.ua/how-to-run-parallel-tests-wit
 1. [Download latest Selenium-server-standalone](http://goo.gl/PJUZfa) on grid hub and all grid nodes
 2. [Download Latest IEDriver](http://selenium-release.storage.googleapis.com/index.html) 
 3. [Download Latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to all Grid Nodes that will run tests (and hub if it will as well)
-4. Configure .bat files for JSON files for HUB and Nodes, and save to C:\Selenium as shown in files below.
+4. Configure .bat files for JSON files for HUB and Nodes, and save to `C:\Selenium` as shown in files below.
 
 ### Start Grid computers, and Run tests in IDE
-1. Start grid nodes and hub by running corresponding batch files. On hub run 'C:\Selenium\startHub.bat'; on Nodes run 'C:\Selenium\startNode.bat'. For more detailed info see [Grid configuration instructions](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
+1. Start grid nodes and hub by running corresponding batch files. On hub run `C:\Selenium\startHub.bat`; on Nodes run `C:\Selenium\startNode.bat`. For more detailed info see [Grid configuration instructions](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
 2. Import `Parallel` folder into Eclipse or Intellij, and run as a TestNG test. (I assume you know how to do that already and just wanted to know how to make tests parallel (if not, please [see SeleniumSimplified videos](http://seleniumsimplified.com/get-started/) for tips on getting set up from the very basics to get this working
 
 **[startHub.bat]**
