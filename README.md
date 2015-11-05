@@ -4,10 +4,14 @@ Super-simple example of how to make WebDriver Parallel tests with Selenium grid 
 ## Running WebDriver Tests in Parallel using TestNG
 
 ### Download the following to C:\Selenium
-1. [Download latest Selenium-server file](http://goo.gl/PJUZfa) to C:\Selenium on grid hub and all grid nodes
-2. [Download Latest IEDriver](http://selenium-release.storage.googleapis.com/index.html) and [Download Latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to all Grid Nodes that will run tests (and hub if it will as well)
-3. Start grid nodes and hub. The simplest way on windows VM's / machines is with a batch file) see example .bat and .json files below. (I.e. On the hub, run 'C:\selenium\startHub.bat' and on Nodes 'C:\selenium\startNode.bat' [Grid configuration instructions](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
-4. Import `Parallel` folder into Eclipse or Intellij, and run as a TestNG test. (I assume you know how to do that already and just wanted to know how to make tests parallel (if not, please [see SeleniumSimplified videos](http://seleniumsimplified.com/get-started/) for tips on getting set up from the very basics to get this working
+1. [Download latest Selenium-server file](http://goo.gl/PJUZfa) on grid hub and all grid nodes
+2. [Download Latest IEDriver](http://selenium-release.storage.googleapis.com/index.html) 
+3. [Download Latest ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) to all Grid Nodes that will run tests (and hub if it will as well)
+4. Configure .bat files for JSON files for HUB and Nodes, and save to C:\Selenium as shown in files below.
+
+### Start Grid computers, and Run tests in IDE
+1. Start grid nodes and hub by running corresponding batch files. On hub run 'C:\Selenium\startHub.bat'; on Nodes run 'C:\Selenium\startNode.bat'. For more detailed info see [Grid configuration instructions](https://github.com/SeleniumHQ/selenium/wiki/Grid2)
+2. Import `Parallel` folder into Eclipse or Intellij, and run as a TestNG test. (I assume you know how to do that already and just wanted to know how to make tests parallel (if not, please [see SeleniumSimplified videos](http://seleniumsimplified.com/get-started/) for tips on getting set up from the very basics to get this working
 
 **[startHub.bat]**
 ````batch
